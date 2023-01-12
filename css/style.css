@@ -332,7 +332,6 @@ img {
     align-items: center;
     background-image: url(../images/Star.svg);
     transition: all 0.3s;
-    cursor: pointer;
 }
 .buy__price:hover {
     scale: 1.2;
