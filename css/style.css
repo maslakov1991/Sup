@@ -231,10 +231,25 @@ img {
     background-color: transparent;
     position: absolute;
 }
+
 .popup-btn span {
     display: block;
     padding-top: 12px;
     color: #ffffff;
+    transition: color .3s;
+}
+.popup-btn:hover span {
+    color: #0093a1;
+}
+.popup-btn path,
+.popup-btn circle{
+    transition: all .3s;
+}
+.popup-btn:hover path{
+    fill: #b9c400;
+}
+.popup-btn:hover circle{
+    stroke: #b9c400;
 }
 .info__btn {
     bottom: 0;
@@ -456,4 +471,78 @@ img {
     text-align: center;
     align-items: center;
     justify-content: center;
+}
+.footer {
+    padding: 100px 0 80px;
+    background-color: #262c27;
+    color: #fff;
+}
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__logo{
+    align-self: flex-start;
+}
+.footer__logo path{
+    transition: fill .3 ease;
+}
+.footer__logo:hover path{ 
+    fill: #0093a1;
+}
+.footer__title {
+    margin-bottom: 25px;
+}
+.footer__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+.footer__form-input {
+    margin-bottom: 57px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    display: block;
+    width: 100%;
+    padding: 10px 0px;
+}
+.footer__form-input::placeholder {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+    opacity: 0.3;
+}
+.footer__form-btn {
+    font-family: "Comfortaa", cursive;
+    padding: 10px 66px;
+    margin-bottom: 110px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    max-width: 195px;
+}
+.footer__socials-title{
+    margin-bottom: 28px;
+    font-weight: 700;
+}
+
+.footer__gallery{
+    display: grid;
+    gap: 52px;
+    grid-template-columns: repeat(4, 1fr);
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+.footer__menu-list{
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
 }
